@@ -223,8 +223,10 @@
                     <LinearLayout
                         android:id="@+id/ll_yes"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
                         android:layout_marginStart="20dp"
+                        android:paddingHorizontal="10dp"
                         android:background="@drawable/white_bg_stoke_15_corner">
 
                         <ImageView
@@ -249,8 +251,10 @@
                     <LinearLayout
                         android:id="@+id/ll_no"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
                         android:layout_marginStart="20dp"
+                        android:paddingHorizontal="10dp"
                         android:background="@drawable/white_bg_15_corner">
 
                         <ImageView

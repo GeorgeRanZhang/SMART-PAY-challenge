@@ -77,6 +77,24 @@ class MotoTransactionActivity : BaseActivity() {
             tvSelectType2.isVisible = false
             mViewModel.setIsSingleMoto(!mViewModel.getIsSingleMoto())
         }
+        llYes.setOnClickListener {
+            llYes.background =
+                ContextCompat.getDrawable(this, R.drawable.white_bg_stoke_15_corner)
+            llNo.background =
+                ContextCompat.getDrawable(this, R.drawable.white_bg_15_corner)
+            ivYes.isVisible = true
+            ivNo.isVisible = false
+            mViewModel.setIsStoredOnFile(true)
+        }
+        llNo.setOnClickListener{
+            llNo.background =
+                ContextCompat.getDrawable(this, R.drawable.white_bg_stoke_15_corner)
+            llYes.background =
+                ContextCompat.getDrawable(this, R.drawable.white_bg_15_corner)
+            ivNo.isVisible = true
+            ivYes.isVisible = false
+            mViewModel.setIsStoredOnFile(false)
+        }
         etExpireDate.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
@@ -238,7 +256,7 @@ class MotoTransactionActivity : BaseActivity() {
             llYes.background =
                 ContextCompat.getDrawable(this, R.drawable.white_bg_stoke_15_corner)
             llNo.background =
-                ContextCompat.getDrawable(this, R.drawable.white_bg_4_corner)
+                ContextCompat.getDrawable(this, R.drawable.white_bg_15_corner)
             ivYes.isVisible = true
             ivNo.isVisible = false
             mViewModel.setIsStoredOnFile(true)
