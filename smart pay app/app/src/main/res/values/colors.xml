@@ -5,6 +5,7 @@
     <color name="colorStatusBackground">#12D5EC</color>
     <color name="colorBlack">#000000</color>
     <color name="colorBoarder">#979797</color>
+    <color name="colorUnselect">#33979797</color>
     <color name="colorSingleMoto">#57DC47</color>
     <color name="colorGradient">#FFD400</color>
     <color name="colorRecurringMoto">#4775DC</color>

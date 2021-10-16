@@ -15,11 +15,11 @@ class MainActivity : BaseActivity() {
     fun startSingleMotoTransaction(view: View) {
         val intent = Intent(this, MotoTransactionActivity::class.java)
         if (view.id == R.id.tv_single_moto) intent.putExtra(
-            MotoTransactionActivity.MOTO_TYPE,
-            getString(R.string.single_moto)
+            MotoTransactionActivity.IS_SINGLE_MOTO_TYPE,
+            true
         ) else intent.putExtra(
-            MotoTransactionActivity.MOTO_TYPE,
-            getString(R.string.recurring_moto)
+            MotoTransactionActivity.IS_SINGLE_MOTO_TYPE,
+            false
         )
         startActivity(intent)
     }
