@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MotoTransactionActivity">
+
+    <include layout="@layout/view_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp">
+
+            <EditText
+                android:id="@+id/et_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:digits="1234567890."
+                android:gravity="center"
+                android:hint="@string/no_money"
+                android:inputType="text|textNoSuggestions"
+                android:lines="1"
+                android:maxLength="14"
+                android:theme="@style/editTextStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_card_pan"
+                    android:theme="@style/hintTextStyle" />
+
+                <EditText
+                    android:id="@+id/et_pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:digits="1234567890"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:lines="1"
+                    android:maxLength="19"
+                    android:theme="@style/editTextStyle"
+                    android:hint="@string/card_pan_hint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expire_date"
+                        android:theme="@style/hintTextStyle" />
+
+                    <EditText
+                        android:id="@+id/et_expire_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white"
+                        android:digits="1234567890"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:maxLength="19"
+                        android:theme="@style/editTextStyle"
+                        android:hint="@string/expire_date_hint"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cvv"
+                        android:theme="@style/hintTextStyle" />
+
+                    <EditText
+                        android:id="@+id/et_cvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white"
+                        android:digits="1234567890"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:maxLength="3"
+                        android:theme="@style/editTextStyle"
+                        android:hint="@string/cvv_hint"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_moto"
+                    android:theme="@style/hintTextStyle" />
+
+                <RelativeLayout
+                    android:id="@+id/rv_select_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/single_moto_bg">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:src="@mipmap/select"
+                        android:contentDescription="@string/select_moto"/>
+                    <TextView
+                        android:id="@+id/tv_select_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/single_moto"
+                        android:theme="@style/displayTextStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stored_credentials"
+                    android:theme="@style/hintTextStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:text="@string/is_stored_on_file"
+                        android:theme="@style/hintTextStyle" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/white_bg_15_corner">
+
+                        <ImageView
+                            android:id="@+id/iv_yes"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:src="@mipmap/yes"
+                            android:contentDescription="@string/yes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/yes"
+                            android:textColor="@color/colorBlack"
+                            android:theme="@style/hintTextStyle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/white_bg_15_corner">
+
+                        <ImageView
+                            android:id="@+id/iv_no"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:src="@mipmap/yes"
+                            android:visibility="gone"
+                            android:contentDescription="@string/yes"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/no"
+                            android:textColor="@color/colorBlack"
+                            android:theme="@style/hintTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvContinue"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gradient_bg_yellow_green"
+        android:text="@string/confirm"
+        android:theme="@style/displayTextStyle"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"/>
+</LinearLayout>

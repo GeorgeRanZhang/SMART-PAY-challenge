@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <include layout="@layout/view_header"/>
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/tv_single_moto"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:text="@string/single_moto"
+            android:theme="@style/displayTextStyle"
+            android:elevation="5dp"
+            app:elevation="5dp"
+            android:onClick="startSingleMotoTransaction"
+            android:background="@drawable/single_moto_bg"
+            />
+        <TextView
+            android:id="@+id/tv_recurring_moto"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/recurring_moto"
+            android:theme="@style/displayTextStyle"
+            android:elevation="5dp"
+            android:onClick="startSingleMotoTransaction"
+            app:elevation="5dp"
+            android:background="@drawable/recurring_moto_bg"
+            />
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

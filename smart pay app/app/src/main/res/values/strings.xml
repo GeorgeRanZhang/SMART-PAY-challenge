@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">SmartPay app</string>
+    <string name="welcome">Welcome</string>
+    <string name="single_moto">SINGLE MOTO</string>
+    <string name="recurring_moto">RECURRING MOTO</string>
+    <string name="moto_transaction">MOTO TRANSACTION</string>
+    <string name="dollar">$</string>
+    <string name="no_money">$ 0.00</string>
+    <string name="enter_card_pan">Enter Card PAN</string>
+    <string name="expire_date">EXPIRY Date</string>
+    <string name="cvv">Security Code</string>
+    <string name="select_moto">Select MOTO Type</string>
+    <string name="stored_credentials">Stored Credentials</string>
+    <string name="is_stored_on_file">Card Stored on File?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirm">CONTINUE</string>
+    <string name="cvv_hint">000</string>
+    <string name="expire_date_hint">01/01</string>
+    <string name="card_pan_hint">____ ____ ____ ____</string>
 </resources>

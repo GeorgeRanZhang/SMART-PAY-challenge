@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/gradient_bg_yellow_green.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/layout_single_moto_bg.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/recurring_moto_bg.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/single_moto_bg.xml" value="0.1703125" />
+        <entry key="app/src/main/res/drawable/white_bg.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/white_bg_15_corner.xml" value="0.1984375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_moto_transaction.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_try.xml" value="0.18229166666666666" />
+        <entry key="app/src/main/res/layout/view_header.xml" value="0.18229166666666666" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
