@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".MotoTransactionActivity">
+    tools:context=".moto.transaction.MotoTransactionActivity">
 
     <include layout="@layout/view_header" />
 
@@ -26,12 +26,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="@null"
-                android:digits="1234567890."
                 android:gravity="center"
                 android:hint="@string/no_money"
-                android:inputType="text|textNoSuggestions"
+                android:inputType="numberDecimal"
                 android:lines="1"
-                android:maxLength="14"
+                android:maxLength="15"
+                android:nextFocusDown="@id/et_pan"
                 android:theme="@style/editTextStyle" />
 
             <LinearLayout
@@ -46,18 +46,20 @@
                     android:text="@string/enter_card_pan"
                     android:theme="@style/hintTextStyle" />
 
-                <EditText
+                <com.smartpay.application.util.MoveDisableEditText
                     android:id="@+id/et_pan"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
                     android:background="@android:color/white"
-                    android:digits="1234567890"
                     android:gravity="center"
                     android:letterSpacing="0.1"
                     android:lines="1"
-                    android:maxLength="19"
+                    android:maxLength="23"
+                    android:inputType="number"
                     android:theme="@style/editTextStyle"
+                    android:longClickable="false"
+                    android:nextFocusDown="@id/et_expire_date"
                     android:hint="@string/card_pan_hint"/>
             </LinearLayout>
 
@@ -84,12 +86,14 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="10dp"
                         android:background="@android:color/white"
-                        android:digits="1234567890"
                         android:gravity="center"
                         android:lines="1"
-                        android:maxLength="19"
+                        android:maxLength="5"
+                        android:inputType="number"
+                        android:nextFocusDown="@id/et_cvv"
                         android:theme="@style/editTextStyle"
-                        android:hint="@string/expire_date_hint"/>
+                        android:hint="@string/expire_date_hint"
+                        tools:ignore="TextFields" />
                 </LinearLayout>
 
                 <View
@@ -114,12 +118,13 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="10dp"
                         android:background="@android:color/white"
-                        android:digits="1234567890"
                         android:gravity="center"
                         android:lines="1"
                         android:maxLength="3"
+                        android:inputType="number"
                         android:theme="@style/editTextStyle"
-                        android:hint="@string/cvv_hint"/>
+                        android:hint="@string/cvv_hint"
+                        android:imeOptions="actionDone"/>
                 </LinearLayout>
             </LinearLayout>
 

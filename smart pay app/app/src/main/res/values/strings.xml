@@ -5,7 +5,8 @@
     <string name="recurring_moto">RECURRING MOTO</string>
     <string name="moto_transaction">MOTO TRANSACTION</string>
     <string name="dollar">$</string>
-    <string name="no_money">$ 0.00</string>
+    <string name="dollar_two_decimal">$%.2f</string>
+    <string name="no_money">$0.00</string>
     <string name="enter_card_pan">Enter Card PAN</string>
     <string name="expire_date">EXPIRY Date</string>
     <string name="cvv">Security Code</string>
@@ -17,5 +18,6 @@
     <string name="confirm">CONTINUE</string>
     <string name="cvv_hint">000</string>
     <string name="expire_date_hint">01/01</string>
-    <string name="card_pan_hint">____ ____ ____ ____</string>
+    <string name="card_pan_hint">Card number</string>
+    <string name="month">12</string>
 </resources>

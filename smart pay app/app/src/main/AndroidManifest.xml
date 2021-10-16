@@ -20,8 +20,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MotoTransactionActivity"
-            android:windowSoftInputMode="adjustPan">
+            android:name=".moto.transaction.MotoTransactionActivity"
+            android:windowSoftInputMode="adjustResize">
         </activity>
     </application>
 
