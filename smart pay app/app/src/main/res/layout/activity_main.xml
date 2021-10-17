@@ -23,7 +23,7 @@
             android:theme="@style/displayTextStyle"
             android:elevation="5dp"
             app:elevation="5dp"
-            android:onClick="startSingleMotoTransaction"
+            android:onClick="startMotoTransaction"
             android:background="@drawable/single_moto_bg"
             />
         <TextView
@@ -34,7 +34,7 @@
             android:text="@string/recurring_moto"
             android:theme="@style/displayTextStyle"
             android:elevation="5dp"
-            android:onClick="startSingleMotoTransaction"
+            android:onClick="startMotoTransaction"
             app:elevation="5dp"
             android:background="@drawable/recurring_moto_bg"
             />

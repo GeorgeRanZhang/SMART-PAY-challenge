@@ -16,8 +16,10 @@
         <entry key="app/src/main/res/drawable/white_bg_stoke_15_corner.xml" value="0.14427083333333332" />
         <entry key="app/src/main/res/drawable/white_strock_4_corner.xml" value="0.14427083333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/activity_moto_transaction.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_moto_transaction.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/activity_result.xml" value="0.11666666666666667" />
         <entry key="app/src/main/res/layout/activity_try.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_result.xml" value="0.10677083333333333" />
         <entry key="app/src/main/res/layout/view_header.xml" value="0.18229166666666666" />
       </map>
     </option>

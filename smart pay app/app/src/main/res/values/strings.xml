@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">SmartPay app</string>
     <string name="welcome">Welcome</string>
+    <string name="result">Result</string>
     <string name="single_moto">SINGLE MOTO</string>
     <string name="recurring_moto">RECURRING MOTO</string>
     <string name="moto_transaction">MOTO TRANSACTION</string>
@@ -19,5 +20,6 @@
     <string name="cvv_hint">000</string>
     <string name="expire_date_hint">01/01</string>
     <string name="card_pan_hint">Card number</string>
-    <string name="month">12</string>
+    <string name="month12">12</string>
+    <string name="month1">01</string>
 </resources>

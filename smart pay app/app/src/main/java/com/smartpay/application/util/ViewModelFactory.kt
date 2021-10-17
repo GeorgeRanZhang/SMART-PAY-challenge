@@ -1,4 +1,4 @@
-package com.smartpay.application
+package com.smartpay.application.util
 
 import android.app.Application
 import android.os.Bundle

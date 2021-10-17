@@ -12,9 +12,7 @@ import androidx.test.espresso.intent.matcher.IntentMatchers
 import androidx.test.espresso.intent.rule.IntentsTestRule
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.platform.app.InstrumentationRegistry
-import com.smartpay.application.moto.transaction.MotoTransactionActivity.Companion.IS_SINGLE_MOTO_TYPE
-import org.hamcrest.CoreMatchers
+import com.smartpay.application.common.Constants.Companion.IS_SINGLE_MOTO_TYPE
 import org.hamcrest.core.AllOf
 import org.hamcrest.core.IsEqual
 import org.junit.Before

@@ -2,20 +2,17 @@ package com.smartpay.application
 
 import android.content.Context
 import android.content.Intent
-import android.view.View
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions
-import androidx.test.espresso.assertion.ViewAssertions.doesNotExist
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.intent.rule.IntentsTestRule
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
-import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.smartpay.application.common.Constants
 import com.smartpay.application.moto.transaction.MotoTransactionActivity
-import org.hamcrest.Matchers.not
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -30,7 +27,7 @@ class MotoTransactionActivityTest {
     fun setUp() {
         mContext = ApplicationProvider.getApplicationContext()
         val intent = Intent(mContext, MotoTransactionActivity::class.java).apply {
-            putExtra(MotoTransactionActivity.IS_SINGLE_MOTO_TYPE, true)
+            putExtra(Constants.IS_SINGLE_MOTO_TYPE, true)
         }
 
         motoTransactionActivity.launchActivity(intent)

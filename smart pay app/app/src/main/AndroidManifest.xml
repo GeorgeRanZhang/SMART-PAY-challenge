@@ -23,6 +23,9 @@
             android:name=".moto.transaction.MotoTransactionActivity"
             android:windowSoftInputMode="adjustResize">
         </activity>
+        <activity
+            android:name=".result.ResultActivity">
+        </activity>
     </application>
 
 </manifest>

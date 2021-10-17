@@ -14,6 +14,7 @@
     <include layout="@layout/view_header" />
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -24,9 +25,10 @@
             android:orientation="vertical"
             android:layout_marginHorizontal="20dp"
             android:clickable="true"
-            android:focusableInTouchMode="true" >
+            android:focusableInTouchMode="true"
+            android:focusable="true">
 
-            <EditText
+            <com.smartpay.application.util.MoveDisableEditText
                 android:id="@+id/et_transaction"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -36,6 +38,7 @@
                 android:inputType="numberDecimal"
                 android:lines="1"
                 android:maxLength="15"
+                android:longClickable="false"
                 android:nextFocusDown="@id/et_pan"
                 android:theme="@style/editTextStyle" />
 
@@ -87,7 +90,7 @@
                         android:text="@string/expire_date"
                         android:theme="@style/hintTextStyle" />
 
-                    <EditText
+                    <com.smartpay.application.util.MoveDisableEditText
                         android:id="@+id/et_expire_date"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
@@ -95,6 +98,7 @@
                         android:background="@android:color/white"
                         android:gravity="center"
                         android:lines="1"
+                        android:longClickable="false"
                         android:maxLength="5"
                         android:inputType="number"
                         android:nextFocusDown="@id/et_cvv"
@@ -120,7 +124,7 @@
                         android:text="@string/cvv"
                         android:theme="@style/hintTextStyle" />
 
-                    <EditText
+                    <com.smartpay.application.util.MoveDisableEditText
                         android:id="@+id/et_cvv"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
@@ -128,7 +132,8 @@
                         android:background="@android:color/white"
                         android:gravity="center"
                         android:lines="1"
-                        android:maxLength="3"
+                        android:longClickable="false"
+                        android:maxLength="4"
                         android:inputType="number"
                         android:theme="@style/editTextStyle"
                         android:hint="@string/cvv_hint"
@@ -150,7 +155,7 @@
                     android:theme="@style/hintTextStyle" />
 
                 <RelativeLayout
-                    android:id="@+id/rv_select_type"
+                    android:id="@+id/rl_select_type"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/white_stroke_4_corner"
@@ -289,5 +294,8 @@
         android:text="@string/confirm"
         android:theme="@style/displayTextStyle"
         android:textStyle="bold"
-        android:textColor="@color/colorWhite"/>
+        android:textColor="@color/colorWhite"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"/>
 </LinearLayout>
